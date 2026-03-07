@@ -1,4 +1,4 @@
-﻿import streamlit as st
+FIX﻿import streamlit as st
 import pandas as pd
 from datetime import datetime
 import os
@@ -17,7 +17,7 @@ staff_db = {
 
 # --- APP UI ---
 st.set_page_config(page_title="Secure Attendance", layout="centered")
-st.title("🏛️ FIRST CLASS VETERINARY HOSPITAL, TILOUTHU")
+st.title("🏛️ FIXED_LOCATION = "FIRST CLASS VETERINARY HOSPITAL, TILOUTHU")
 st.info(f"📍 Location: {VETERINARY HOSPITAL, TILOUTHU} | 📅 Date: {datetime.now().strftime('%d-%m-%Y')}")
 
 # 1. Name Selection
