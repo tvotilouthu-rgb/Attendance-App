@@ -17,8 +17,8 @@ staff_db = {
 
 # --- APP UI ---
 st.set_page_config(page_title="Secure Attendance", layout="centered")
-st.title("🏛️ Secure Staff Attendance")
-st.info(f"📍 Location: {FIXED_LOCATION} | 📅 Date: {datetime.now().strftime('%d-%m-%Y')}")
+st.title("🏛️ FIRST CLASS VETERINARY HOSPITAL, TILOUTHU")
+st.info(f"📍 Location: {VETERINARY HOSPITAL, TILOUTHU} | 📅 Date: {datetime.now().strftime('%d-%m-%Y')}")
 
 # 1. Name Selection
 selected_name = st.selectbox("Apna Naam Select Karein:", ["--Select Name--"] + list(staff_db.keys()))
@@ -67,4 +67,5 @@ if st.expander("Admin: Aaj ka Attendance Record Dekhein"):
             data = pd.read_csv(LOG_FILE)
             st.dataframe(data.sort_values(by="Time", ascending=False))
         else:
+
             st.warning("Abhi tak koi record nahi hai.")
