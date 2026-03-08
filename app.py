@@ -2,6 +2,7 @@
 import pandas as pd
 from datetime import datetime
 import os
+import pytz
 
 # --- SETTINGS & STAFF DATABASE ---
 FIXED_LOCATION = "VETERINARY HOSPITAL, TILOUTHU"
@@ -34,7 +35,8 @@ if selected_name != "--Select Name--":
         st.success(f"Pehchaan Sahi Hai: {selected_name} ({staff_db[selected_name]['post']})")
         
         def log_attendance(status):
-            now = datetime.now()
+            IST = pytz.timezone('Asia/Kolkata')
+            now = datetime.now(IST)
             new_entry = {
                 "Name": selected_name,
                 "Post": staff_db[selected_name]["post"],
@@ -69,6 +71,7 @@ if st.expander("Admin: Aaj ka Attendance Record Dekhein"):
         else:
 
             st.warning("Abhi tak koi record nahi hai.")
+
 
 
 
