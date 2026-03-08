@@ -4,7 +4,7 @@ from datetime import datetime
 import os
 
 # --- SETTINGS & STAFF DATABASE ---
-FIXED_LOCATION = "Veterinary Hospital, Tilouthu"
+FIXED_LOCATION = "VETERINARY HOSPITAL, TILOUTHU"
 LOG_FILE = "Attendance_Data.csv"
 
 # Staff Data with PINs (Aap PIN badal sakte hain)
@@ -17,7 +17,7 @@ staff_db = {
 
 # --- APP UI ---
 st.set_page_config(page_title="Secure Attendance", layout="centered")
-st.title("🏛️ FIXED_LOCATION = "FIRST CLASS VETERINARY HOSPITAL, TILOUTHU")
+st.title(f"🏛️ {FIXED_LOCATION}")
 st.info(f"📍 Location: {FIXED_LOCATION} | 📅 Date: {datetime.now().strftime('%d-%m-%Y')}")
 
 # 1. Name Selection
@@ -69,5 +69,6 @@ if st.expander("Admin: Aaj ka Attendance Record Dekhein"):
         else:
 
             st.warning("Abhi tak koi record nahi hai.")
+
 
 
