@@ -1,4 +1,4 @@
-FIX﻿import streamlit as st
+﻿import streamlit as st
 import pandas as pd
 from datetime import datetime
 import os
@@ -69,4 +69,5 @@ if st.expander("Admin: Aaj ka Attendance Record Dekhein"):
         else:
 
             st.warning("Abhi tak koi record nahi hai.")
+
 
