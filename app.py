@@ -12,10 +12,10 @@ IST = pytz.timezone('Asia/Kolkata')
 
 # Staff Data (QR ID match karne ke liye)
 staff_db = {
-    "AHD-TIL-101": {"name": "Dr. Sanjay Kumar", "post": "T.V.O.", "pin": "1001"},
-    "AHD-TIL-102": {"name": "Pramod Kumar Pandey", "post": "D.E.O.", "pin": "2002"},
-    "AHD-TIL-103": {"name": "Satyanarayan Pandey", "post": "Peon", "pin": "3003"},
-    "AHD-TIL-104": {"name": "Raja Kumar", "post": "Peon (Outsourced)", "pin": "4004"}
+    "AHD-TIL-01": {"name": "Dr. Sanjay Kumar", "post": "T.V.O.", "pin": "1001"},
+    "AHD-TIL-02": {"name": "Pramod Kumar Pandey", "post": "D.E.O.", "pin": "2002"},
+    "AHD-TIL-03": {"name": "Satyanarayan Pandey", "post": "Peon", "pin": "3003"},
+    "AHD-TIL-04": {"name": "Raja Kumar", "post": "Peon (Outsourced)", "pin": "4004"}
 }
 
 st.set_page_config(page_title="AHD Smart Attendance", layout="centered")
@@ -103,3 +103,4 @@ else:
         st.download_button("📥 Download Report (CSV)", data=csv, file_name=f"Attendance_{selected_month}.csv", mime='text/csv')
     else:
         st.warning("Abhi tak koi data record nahi hua hai.")
+
